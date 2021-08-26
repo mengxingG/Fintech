@@ -1,4 +1,4 @@
-def projectName = 'demospring'
+def projectName = 'Fintech'
 def version = "0.0.${currentBuild.number}"
 def dockerImageTag = "${projectName}:${version}"
 
