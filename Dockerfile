@@ -1,6 +1,6 @@
 FROM maven:3.6.3-openjdk-11 AS compile
-COPY . /usr/src/mymaven/src/main/java/congre
-WORKDIR /usr/src/mymaven/src/main/java/congre
+COPY . /usr/src/mymaven/src/main/java/conygre
+WORKDIR /usr/src/mymaven/src/main/java/conygre
 RUN mvn -Dmaven.test.skip=true clean package
 
 FROM openjdk:11
