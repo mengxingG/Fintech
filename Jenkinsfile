@@ -6,7 +6,7 @@ pipeline {
   agent any
 
   stages {
-     stage('Build docker image') {
+     stage('Build docker image & Maven') {
           // this stage also builds and tests the Java project using Maven
           steps {
             sh "docker build -t ${dockerImageTag} ."
